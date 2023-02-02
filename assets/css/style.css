@@ -1,9 +1,7 @@
 @font-face {
     font-family: 'saudagarregular';
-    src: url('/assets/text/saudagar-webfont.woff2') format('woff2'),
-         url('/assets/text/saudagar-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    src: url('../text/saudagar-webfont.woff2') format('woff2'),
+        url('../text/saudagar-webfont.woff') format('woff');
 }
 
 /* ----------------------------------------------- */
