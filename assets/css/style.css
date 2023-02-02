@@ -8,17 +8,80 @@
 html {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    background-color: #F2EDE6;
+/* Création de la grid */
+
+#container-all {
+    display: grid;
+    grid-template-rows: 237px 320px 220px 200px;
+    grid-template-columns: 15% 30% 30% 25%;
+    grid-template-areas: "titre goutte rosee rosee"
+                         "titre goutte collier-rouge collier-bleu"
+                         "titre goutte pince collier-multiple"
+                         "titre goutte pince collier-fleur"   ;
+                         gap: 0;
+}
+
+/* placement des images de la grid */
+
+h2 {
     font-family: 'saudagarregular';
+    font-size: 12em;
+    writing-mode: vertical-rl;
+    grid-area: titre;
+    rotate: -180deg;
+    transform-origin: -80px 380px;
 }
 
-.high-bar {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
+.goutte {
+    grid-area: goutte;
+    width: 100%;
+    height: 1018px;
 }
+
+.rosee {
+    grid-area: rosee;
+    width: 100%;
+    height: 256px;
+}
+
+.collier-rouge{
+    grid-area: collier-rouge;
+    width: 100%;
+    height: 345px;
+}
+
+.collier-bleu{
+    grid-area: collier-bleu;
+    width: 100%;
+    height: 345px;
+}
+
+.pince {
+    grid-area: pince;
+    width: 100%;
+    height: 474px;
+}
+
+.collier-multiple {
+    grid-area: collier-multiple;
+    width: 100%;
+    height: 259px;
+}
+
+.collier-fleur{
+    grid-area: collier-fleur;
+    width: 100%;
+    height: 253px;
+}
+
+/* definition des props des élément de la grid */
+
+#container-all img:hover {
+    transform: scale(1.25);
+    transition: all 0.5s ease;
+}
+
+
