@@ -79,9 +79,9 @@ h2 {
 
 /* definition des props des élément de la grid */
 
-/* #container-all img:hover {
+#container-all img:hover {
     transform: scale(1.25);
     transition: all 0.5s ease;
-} */
+}
 
 
