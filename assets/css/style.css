@@ -60,17 +60,11 @@ body {
 
 }
 
-/* .nav-bar a:hover {
+.nav-bar a:hover {
+    transform: scale(1.25);
+    transition: all 1s ease;
     color: #369DA3;
     text-decoration: underline;
-    font-size: 30px;
-} */
-
-.nav-bar a:hover {
-   transform: scale(1.25);
-   transition: all 1s ease;
-   color: #369DA3;
-   text-decoration: underline;
 }
 
 
@@ -103,7 +97,10 @@ body {
 
 @media screen and (max-width: 667px) {
     .bar-knowledge img {
-        display: none;
+        /* display: none; */
+        top: 91px;
+        left: -8px;
+        width: 46%;
     }
 
     video {
@@ -143,15 +140,16 @@ body {
         color: black;
         width: 80%;
         text-align: center;
-        }
+        padding-right: 33px;
+    }
 
-    .first-text h1{
+    .first-text h1 {
         font-size: 14px;
         color: black;
         text-align: center;
-        }
+    }
 
-        .bar-knowledge {
-            display: flex;
-        } 
+    .bar-knowledge {
+        display: flex;
+    }
 }
