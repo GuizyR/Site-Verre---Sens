@@ -159,7 +159,7 @@ body {
 #who-am-i {
     display: flex;
     flex-direction: column;
-    font-family: 'saudagarregular';
+    /* font-family: 'saudagarregular'; */
 }
 .who h2 {
     margin-top: 60px;
@@ -181,7 +181,7 @@ body {
     display: flex;
     flex-direction: row;
     background-color: #ddeff1;  
-    width: 110%;
+    width: 100%;
 }
 .where-text {
     display: flex;
@@ -291,3 +291,47 @@ body {
     transform: scale(1.25);
     transition: all 0.5s ease;
 }
+
+/* --------------contact--------------------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 20%;
+    padding: 15px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 20%;
+    margin-bottom: 20px;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+#contact {
+    align-items: center;
+    font-size: 11em;
+    writing-mode: vertical-rl;
+    grid-area: titre;
+    rotate: -180deg;
+    transform-origin: 90px 720px;
+    color: grey;
+}
+
+#contact-branc {
+    background-image: url(../img/FdContact@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+  }
