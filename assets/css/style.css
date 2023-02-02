@@ -15,13 +15,14 @@ html {
 
 #container-all {
     display: grid;
-    grid-template-rows: 237px 320px 220px 200px;
+    grid-template-rows: repeat(4, 25vh);
     grid-template-columns: 15% 30% 30% 25%;
     grid-template-areas: "titre goutte rosee rosee"
                          "titre goutte collier-rouge collier-bleu"
                          "titre goutte pince collier-multiple"
                          "titre goutte pince collier-fleur"   ;
-                         gap: 0;
+    gap: 0;
+    height: 100vh;
 }
 
 /* placement des images de la grid */
@@ -38,50 +39,49 @@ h2 {
 .goutte {
     grid-area: goutte;
     width: 100%;
-    height: 1018px;
+    height: 100vh;
 }
 
 .rosee {
     grid-area: rosee;
     width: 100%;
-    height: 256px;
+    height: 25vh;
 }
 
 .collier-rouge{
     grid-area: collier-rouge;
     width: 100%;
-    height: 345px;
+    height: 25vh;
 }
 
 .collier-bleu{
     grid-area: collier-bleu;
     width: 100%;
-    height: 345px;
+    height: 25vh;
 }
 
 .pince {
     grid-area: pince;
     width: 100%;
-    height: 474px;
 }
 
 .collier-multiple {
     grid-area: collier-multiple;
     width: 100%;
-    height: 259px;
+    height: 25vh;
 }
 
 .collier-fleur{
     grid-area: collier-fleur;
     width: 100%;
-    height: 253px;
+    height: 25vh;
 }
 
 /* definition des props des élément de la grid */
 
-#container-all img:hover {
+/* #container-all img:hover {
     transform: scale(1.25);
     transition: all 0.5s ease;
-}
+} */
 
 
