@@ -17,3 +17,44 @@ body {
 }
 
 /* ------------------------------------------- */
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 20%;
+    padding: 15px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 20%;
+    margin-bottom: 20px;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+#contact {
+    font-size: 11em;
+    writing-mode: vertical-rl;
+    grid-area: titre;
+    rotate: -180deg;
+    transform-origin: 24px 639px;
+}
+
+#contact-branc {
+    background-image: url(../img/FdContact.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+  }
+    
