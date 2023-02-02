@@ -241,6 +241,7 @@ body {
     rotate: -180deg;
     transform-origin: -80px 380px;
     color: grey;
+    letter-spacing: 4px;
 }
 
 .goutte {
