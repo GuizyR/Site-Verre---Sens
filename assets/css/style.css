@@ -13,12 +13,97 @@ html {
 body {
     background-color: #F2EDE6;
     font-family: 'saudagarregular';
+    font-size: 18px;
 }
 
+/* ------------------------------------------------------- */
 .high-bar {
-    width: 20%;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-bottom: 40px;
+}
+
+.high-bar img {
+    width: 15%;
+    margin-bottom: 50px;
+}
+
+.social-media {
+   display: flex;
+   justify-content: flex-end;
+   position: relative;
+}
+
+#facebook {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 90%;
+    top: -170px;
+    z-index: 1;
+}
+
+#instagram {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 80%;
+    top: -170px;
+    z-index: 1;
+}
+/* ------------------------------------------------------- */
+
+.nav-bar {
+    display: flex;
+    margin-bottom: 40px;
+    font-size: 24px;
+    letter-spacing: 4px;
+    justify-content: space-around;
+    margin-left: 20%;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.nav-bar a:hover {
+    color: #369DA3;
+    text-decoration: underline;
+    font-size: 30px;
+  }
+
+
+/* ------------------------------------------------------- */
+
+.bar-knowledge {
+    position: relative;
+}
+
+.bar-knowledge img {
+    width: 30%;
+    position: absolute;
+    top: -207px;
+    left: 0;
+    z-index: 1;
+}
+
+h1 {
+    width: 30%;
+    position: absolute;
+    top: 0px;
+    left: 60%;
+    z-index: 1;
+    color: white;
+    font-size: 40px;
+}
+
+.bar-knowledge p {
+    width: 30%;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    z-index: 1;
+    color: white;
 }
