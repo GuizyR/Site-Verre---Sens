@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verre & Sens</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/verresens-icon" href="assets/img/Favicon.svg">
 
-<body>
     <!----------- Début partie Robin ----------->
 
+<body>
     <div class="high-bar">
         <div> </div>
         <img src="assets/img/verresens.svg" alt="logo verre & sens">
@@ -23,15 +24,15 @@
     </div>
 
     <div class="nav-bar">
-        <a href="story">Mon histoire</a>
-        <a href="story">Mes créations</a>
-        <a href="story">Mes services</a>
-        <a href="story">Contact</a>
+        <a href="#who-am-i">Mon histoire</a>
+        <a href="#container-all">Mes créations</a>
+        <a href="#container-flex">Mes services</a>
+        <a href="#contact-branc">Contact</a>
     </div>
 
     <div class="bar-knowledge">
         <video width="100%" height="100%" muted autoplay loop>
-            <source src="assets/video/Séquence 01.mp4" type="video/mp4">
+            <source src="assets/video/Sequence.mp4" type="video/mp4">
         </video>
         <img src="assets/img/Photo-portrait.png" alt="portrait de la creatrice verre & sens">
         <div class="first-text">
@@ -44,9 +45,10 @@
                 une qualité exceptionnelle.</p>
         </div>
     </div>
-    <!-------------- -------------- --------->
+
 
     <!-- Début partie Virginie qui-suis-je -->
+
     <section id="who-am-i">
         <div class="who">
             <h2>QUI SUIS-JE ?</h2>
@@ -85,37 +87,74 @@
 
     <section id="container-all">
         <h2>GALERIE</h2>
-        <img class="goutte" src="assets/img/emotionheader.jpg" alt="">
-        <img class="rosee" src="assets/img/toile-gouttes-rework.jpg" alt="">
-        <img class="collier-rouge" src="assets/img/Pendentif-rouge-rework.jpg" alt="">
-        <img class="collier-bleu" src="assets/img/bracelet-bleu-rework.jpg" alt="">
-        <img class="pince" src="assets/img/Pinces-billes-de-verre-rework.jpg" alt="">
-        <img class="collier-multiple" src="assets/img/Close-up-collier-rework.jpg" alt="">
-        <img class="collier-fleur" src="assets/img/Collier-fleur-rework.jpg" alt="">
+        <img class="goutte" src="assets/img/emotionheader.jpg"
+            alt="Photo d'un pendentif en forme de goutter en verre accrochée à un arbre">
+        <img class="rosee" src="assets/img/toile-gouttes-rework.jpg" alt="Photo de gouttes accrochées à une toile">
+        <img class="collier-rouge" src="assets/img/Pendentif-rouge-rework.jpg" alt="Photod'un collier rouge en verre">
+        <img class="collier-bleu" src="assets/img/bracelet-bleu-rework.jpg" alt="Photo d'un collier bleu en verre">
+        <img class="pince" src="assets/img/Pinces-billes-de-verre-rework.jpg"
+            alt="Photo de pinces de creation avec des billes de verre">
+        <img class="collier-multiple" src="assets/img/Close-up-collier-rework.jpg"
+            alt="Photo d'un collier en verre vue de près">
+        <img class="collier-fleur" src="assets/img/Collier-fleur-rework.jpg"
+            alt="Photo d'un collier de fleurs en verre">
     </section>
+    <!-- --------------------BERTRAND SERVICE------------------ -->
+    <svg id="fdTra"></svg>
+    <div id="container-flex">
+        <h2>SERVICES</h2>
+        <section>
+            <img src="assets/img/Cration-bijoux-rework.jpg" alt="Photo d'une artiste travaillant dans un atelier">
+            <ul>
+                <li>Les ateliers DIY pour donner libre cours à votre imagination.</li>
+                <li>Selon la saison, venez vous essayer à la création de votre propre bijoux.</li>
+                <li>Ateliers : 02H00 (enfant de 6 à 12 ans inclus)</li>
+                <li>03H30 (adulte à partir de 13 ans)</li>
+            </ul>
+        </section>
+        <section>
+            <img src="assets/img/Feu-cration-bijoux-rework.jpg"
+                alt="Photo d'un feu de braise en action pour la création de la forme du verre">
+            <ul>
+                <li>Créations et réalisation de bijoux en verre.</li>
+                <li>Pièces artisanales uniques et personnalisables.</li>
+            </ul>
+        </section>
+    </div>
 
     <!---------- PARTIE ROBIN CONTACT ------------>
 
     <section id="contact-branc">
         <h2 id="contact">CONTACT</h2>
         <form action="traitement.php" method="post">
-            <label for="nom">Nom :</label>
+            <label for="nom">Nom</label>
             <input type="text" id="nom" name="nom">
 
-            <label for="prenom">Prénom :</label>
+            <label for="prenom">Prénom</label>
             <input type="prenom" id="prenom" name="prenom">
 
-            <label for="email">Adresse e-mail :</label>
+            <label for="email">Adresse e-mail</label>
             <input type="email" id="email" name="email">
 
-            <label for="phone">N° de téléphone :</label>
+            <label for="phone">N° de téléphone</label>
             <input type="phone" id="phone" name="phone">
 
-            <label for="message">Message :</label>
+            <label for="message">Message</label>
             <textarea id="message" name="message"></textarea>
 
             <input type="submit" value="Envoyer" class="button">
         </form>
+    </section>
+    <!-------------------------- Footer--------------------------->
+    <section id="footer">
+        <div class="rules">
+            <p>Verre & Sens EI</p>
+            <p>SIRET: XXXXXX Boulogne-Sur-Mer</p>
+            <p>© Pixabay/Pexels/Vecteezy</p>
+            <p>Héberger par Github</p>
+            <p>Mentions RGPD</p>
+            <p>CGV</p>
+        </div>
     </section>
 
 
