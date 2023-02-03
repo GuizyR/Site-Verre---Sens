@@ -4,4 +4,92 @@
         url('../text/saudagar-webfont.woff') format('woff');
 }
 
+
+
 /* ----------------------------------------------- */
+html {
+    font-family: 'saudagarregular';;
+}
+
+/* #fDTra {
+    top: 4035px;
+    left: -208.4470672607422px;
+    width: 2244px;
+    height: 529px;
+    transform: matrix(0.99, 0.1, -0.1, 0.99, 0, 0);
+    background: #369DA3 0% 0% no-repeat padding-box;
+opacity: 1;
+} */
+
+
+#container-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+#container-flex  h2 {
+    font-family: 'saudagarregular';
+    font-size: 11em;
+    writing-mode: vertical-lr;
+    margin: 0;
+}
+
+#container-flex section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-flex section:last-child {
+    padding-bottom: 19px;
+}
+
+#container-flex section img {
+        width: 300px;
+        height: auto;
+        border-radius: 500px;
+        box-shadow: grey 8px 1px;
+    }
+
+#container-flex section:last-child > img {
+    margin-bottom: 28px;
+}
+
+#container-flex section ul {
+    text-align: center;
+}
+
+#container-flex section ul li {
+   font-size: 1em;
+   width: 70%;
+}
+
+@media  screen and (max-width:962px) {
+
+    #container-flex {  
+        flex-direction: column;
+
+    }
+    
+#container-flex h2 {
+    text-align: center;
+    writing-mode: initial;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+    #container-flex h2 {
+        text-align: left;
+        font-size: 7vh;
+        writing-mode: initial
+    }
+    #container-flex {  
+        flex-direction: column;
+
+    }
+    
+
+}
